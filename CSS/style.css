@@ -1,0 +1,208 @@
+body{
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background: linear-gradient(#81d8d0, white);
+    padding: 20px 0;;
+}
+
+h1 img, footer img{
+    width: 15%;
+    opacity: 0.8;
+}
+
+.caixa_nav {
+    width: 940px;
+    position: relative;
+    margin: 15px auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav ul{
+    display: inline-block;
+    vertical-align: top;
+    margin: -10px auto;
+    width: 100%;
+}
+
+nav a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    color: black;
+    width: 1000px; 
+    position: relative;
+    margin: 0 auto;
+    font-size: 22px; 
+}
+
+.home strong{
+    font-weight: bold;
+}
+
+.home p {
+    font-size: 1em;
+}
+
+#missao{
+    text-align: center;
+    font-size: 1em;
+    margin: 20px 0px 20px 0px;
+    }
+
+p em strong {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkcyan;
+    text-decoration: underline;
+    line-height: 1.5;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+}
+
+.conteudo_beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.itens{
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    transition: 0.2s;
+}
+
+.itens:before{
+    content: "⬤";
+    margin-right: 5px;
+    color: darkcyan;
+    opacity: 0.5;
+}
+
+.itens:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+#gravadora{
+position: relative;
+margin: 0 auto;
+width: 60%;
+transition: 0.2s;
+}
+
+#gravadora:hover{
+    box-shadow: 30px 10px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.video{
+    width: 540px;
+    margin: 1em auto;
+}
+
+footer{
+    text-align: center;
+    background: url(../Produtos/Fundo.jpg);
+    padding: 40px 0;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.copyright{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px){
+
+    .caixa_nav, main, .home, .video {
+        width: auto;
+    }
+    
+    h1{
+        text-align: center;
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    nav{
+        position: static;
+    }
+
+    nav ul li{
+        margin: 0px 0px 0px 18px;
+    }
+
+    h2{
+        font-size: 1.4em;
+    }
+
+    p{
+        text-align: center;
+        padding: 0px 5px 0px 5px;
+        line-height: 1.2;
+    }
+
+    p em strong{
+        text-decoration: none;
+    }
+
+    ul{
+        width: 100%;
+        text-align: center;
+    }
+
+    .conteudo_beneficios, #gravadora{
+        width: 100%;
+    }
+
+    #gravadora{
+        margin-top: 20px;
+    }
+
+    .video{
+        margin: 0px 0px 0px 0px;
+    }
+
+    footer{
+        margin-top: 0px;
+    }
+  
+}

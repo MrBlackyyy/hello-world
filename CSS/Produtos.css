@@ -1,0 +1,148 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background: linear-gradient(#81d8d0, white);
+    padding: 20px 0;
+}
+
+h1 img, footer img{
+    width: 15%;
+    opacity: 0.8;
+}
+
+.caixa_nav {
+    width: 940px;
+    position: relative;
+    margin: 15px auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav ul{
+    margin: -10px auto;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.produtos li:hover{
+    border-color: aquamarine;
+    box-shadow: 30px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.produtos li:hover h2{
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.produtos li:active{
+    border-color:darkcyan
+    transition: 0.3s;
+}
+
+.produtos h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.produtos img{
+    margin: 15px auto;
+}
+
+.descricao {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+#spotify{
+    width: 50%;
+    margin-top: 15px;
+}
+
+footer{
+    text-align: center;
+    background: url(Fundo.jpg);
+    padding: 40px 0px 20px 0px;
+}
+
+.copyright{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .caixa_nav, .produtos, .produtos li {
+        width: auto;
+    }
+
+    .produtos{
+        padding: 5px 0px 5px 0px;
+    }
+    
+    .produtos li{
+        margin: 10px 5px 10px 5px;
+    }
+
+    h1{
+        text-align: center;
+    }
+    
+    nav{
+        position: static;
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+    nav ul li{
+        margin: 0px 0px 0px 20px;
+    }
+
+    footer{
+        line-height: 1.2;
+    }
+
+    }
